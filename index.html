@@ -1,1 +1,105 @@
-<strong>prueba</strong>
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Postcard</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f0f0f0; /* Color de fondo de la página */
+				margin: 0;
+				padding: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			.postcard {
+				background-color: white;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				overflow: hidden;
+				max-width: 500px;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			}
+			.postcard-header {
+				display: flex;
+				justify-content: space-between;
+				padding: 20px;
+			}
+			.postcard-header h1 {
+				margin: 0;
+				font-size: 30px;
+			}
+			.postcard-header img {
+				max-width: 80px;
+				border-radius: 1px;
+			}
+			.postcard-body {
+				display: flex;
+				justify-content: space-between;
+				margin: 10px;
+			}
+			.body-left,
+			.body-right {
+				width: 45%;
+				padding: 10px;
+				background-color: #f9f9f9;
+				border: 1px solid #e0e0e0;
+				border-radius: 4px;
+			}
+			.body-left p {
+				margin: 0 0 10px;
+			}
+			.postcard-footer {
+				text-align: center;
+				margin: 20px 0;
+			}
+			.postcard-footer button {
+				padding: 10px 20px;
+				background-color: #6c757d;
+				color: white;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: background-color 0.3s;
+			}
+			.postcard-footer button:hover {
+				background-color: #5a6268;
+			}
+			.body-right input {
+				width: 100%;
+				padding: 8px;
+				margin: 5px 0;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="postcard">
+			<div class="postcard-header">
+				<h1>My Postcard</h1>
+				<img
+					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
+					alt="Postcard Image"
+				/>
+			</div>
+			<div class="postcard-body">
+				<div class="body-left">
+					<p>Look how awesome! This is a postcard that I creadted using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
+					<p>This is so cool, can´t wait to start soing more stuff!</p>
+				</div>
+				<div class="body-right">
+					<input type="text" placeholder="Some Name" />
+					<input type="email" placeholder="Some Email" />
+					<input type="text" placeholder="Some comment" />
+				</div>
+			</div>
+			<div class="postcard-footer">
+				<button>Send My Postcard</button>
+			</div>
+		</div>
+	</body>
+</html>
